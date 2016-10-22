@@ -7,11 +7,9 @@
  <body>
      <header class="main-header">
        <div class="container">
+        <img class="logo" src="http://placehold.it/150x100">
          <nav class="main-navigation">
             <ul>
-               <li>
-                   <img class="Logo" src="http://placehold.it/150x100">
-               </li>
                 <li>
                     <a href="#">Информация</a>
                 </li>
@@ -21,7 +19,7 @@
                 <li>
                     <a href="#">Прайс-лист</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">Магазин</a>
                 </li>
                 <li>
@@ -49,22 +47,25 @@
                 </li>
             </ul>
          </nav>
-         <h2>ПРОИЗВОДИТЕЛИ:</h2>
-         <form class="filters" action="https://echo.htmlacademy.ru" method="post">
-            
-             <input id="baxter" name="baxter-of-california" type="checkbox" checked> <label for="baxter"> BAXTER OF CALIFORNIA </label>
-             
-             <input id="natty" name="mr natty" type="checkbox"> <label for="natty"> MR NATTY </label>
-             
-             <input id="suavecito" name="suavecito" type="checkbox" checked> <label for="suavecito"> SUAVECITO </label>
-             
-             <input id="malin" name="malin-goetz" type="checkbox"> <label for="malin"> MALIN-GOETZ </label>
-             
-             <input id="murray" name="murray-s" type="checkbox"> <label for="murray"> MURRAY'S </label>
-             
-             <input id="crew" name="american-crew" type="checkbox" checked> <label for="crew"> AMERICAN CREW </label>  
          
-         <h2>ГРУППЫ ТОВАРОВ:</h2>
+         <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+         <fieldset>
+         <legend>ПРОИЗВОДИТЕЛИ:</legend>
+             <input id="baxter" name="baxter-of-california" type="checkbox" checked> <label for="baxter"> Baxter of California </label>
+             
+             <input id="natty" name="mr natty" type="checkbox"> <label for="natty"> Mr Natty </label>
+             
+             <input id="suavecito" name="suavecito" type="checkbox" checked> <label for="suavecito"> Suavecito </label>
+             
+             <input id="malin" name="malin-goetz" type="checkbox"> <label for="malin"> Malin-Goetz </label>
+             
+             <input id="murray" name="murray-s" type="checkbox"> <label for="murray"> Murray's</label>
+             
+             <input id="crew" name="american-crew" type="checkbox" checked> <label for="crew"> American Crew </label>  
+        </fieldset>
+        
+        <fieldset>
+         <legend>ГРУППЫ ТОВАРОВ:</legend>
          
              <input id="britvennye" name="product" type="radio" value="britvennye"><label for="britvennye">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
              
@@ -73,6 +74,7 @@
              <input id="aksessuary" name="product" type="radio" value="aksessuary"><label for="aksessuary">АКСЕССУАРЫ</label> <br>
              
              <input type="submit" value="ПОКАЗАТЬ"> 
+         </fieldset> 
          </form>
          
          <div class="index-content">
