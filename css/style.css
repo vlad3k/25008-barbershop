@@ -18,17 +18,134 @@ h1 {
 }
 
 legend {
-     font-size: 24px;
+    font-size: 24px;
     line-height: 30px;
     color: black;
     font-weight: bold;
     font-family: PTSans; 
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header{
+    margin-bottom: 55px;
+}
+
+.container{
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: aqua;
+    clear: both;
+}
+
+.main-navigation li{
+    background-color: darkorange;
+    display: inline;
+}
+
+.logo{
+    width: 140px;
+    float: left;
+}
+
+.main-navigation{
+    width: 640px;
+    float: left;
+}
+
+.user-block{
+    width: 140px;
+    float: right;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.breadcrumbs li {
+    display: inline;
+}
+
+.filters{
+    background-color: cornflowerblue;
+    width: 25%;
+    float: left;
+}
+
+.producers{
+    margin-bottom: 50px;
+}
+
+.index-content{
+    background-color: fuchsia;
+    float: right;
+    width: 75%;
+}
+
+.index-content-top{
+    width: 220px;
+    min-height: 287px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    
+}
+
+.index-content-bottom{
+    width: 220px;
+    min-height: 287px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 45px;
+}
+
+.main-footer{
+    margin-top: 49px;
+    background-color: darkgrey;
+}
+
+.footer-contacts{
+    width: 310px;
+    background-color: crimson;
+    float: left;
+    margin-right: 90px;
+}
+
+.footer-social{
+    width: 140px;
+    background-color: crimson;
+    float: left;
+    margin-right: 260px;
+}
+
+.footer-copyright{
+    width: 140px;
+    background-color: crimson;
+    float: right;
+    
+}
 
 
-размер шрифта,
-высоту строки,
-цвет шрифта,
-жирность шрифта,
-гарнитуру (название шрифта).
+
+/* catalog-item */
+
+.images{
+    width: 60%;
+    float: left;
+}
+
+.main-description{
+    width: 40%;
+    float: left;
+}
+
+.description{
+    margin-bottom: 65px;
+}
+
